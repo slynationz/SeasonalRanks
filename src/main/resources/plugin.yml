@@ -1,0 +1,18 @@
+name: SeasonalRanks
+version: 1.0.0
+main: com.fiverr.seasonalranks.SeasonalRanks
+api-version: '1.21'
+description: Tracks seasonal ranks and permissions added through its commands, enabling clean resets.
+commands:
+  season:
+    description: Manage seasonal ranks and permissions
+    permission: seasonalranks.admin
+    usage: /season [rank|perm] add [player] [rank|permission]
+  newseason:
+    description: Resets the season, removing all tracked seasonal ranks and permissions
+    permission: seasonalranks.admin
+    usage: /newseason [confirm]
+permissions:
+  seasonalranks.admin:
+    description: Allows access to all SeasonalRanks commands
+    default: op
