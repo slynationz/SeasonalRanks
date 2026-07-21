@@ -2,3 +2,4 @@
 /SeasonalRanks.jar
 *.log
 .DS_Store
+/build.ps1
